@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(251,252,255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+}
+
+.header {
+    text-align: center;
+    color: rgba(251,252,255);
+    padding-bottom: 2%;
+}
+
+input {
+    background-color: rgba(251,252,255);
+    border: none;
+    border-radius: 5px;
+    width: 170px;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.tip-calculator {
+    border: 5px solid rgba(28,110,140);
+    background-color: rgba(28,110,140);
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 450px;
+    padding: 3%;
+}
+
+.inner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.total-container {
+    padding: 2%;
+    border: 1px solid rgba(251,252,255, .7);
+    border-radius: 15px;
+    background-color: rgba(251,252,255,.7);;
+
+}
+
+.split-container {
+    margin-top: 3%;
+    padding: 2%;
+    border: 1px solid rgba(251,252,255, .3);
+    border-radius: 15px;
+    background-color: rgba(251,252,255,.3);;
+}
+
+
+.slider-container {
+    padding: 2%;
+    margin-top: 2%;
+    text-align: center;
+    border: 1px solid rgba(251,252,255, .5);
+    border-radius: 15px;
+    background-color: rgba(251,252,255,.5);;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 175px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgba(251,252,255);
+    outline: none;
+
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(29,152,194);
+    cursor: pointer;
+  }
+
+.calculate-button {
+    margin-top: 4%;
+    text-align: center;
+}
+
+.calculate-button > button {
+    width: 175px;
+    font-size: 1.5rem;
+    padding: 3%;
+    border-radius: 15px;
+    border-color: rgba(29,152,194);
+    background-color: rgba(251,252,255, .7);
+    color: rgba(29,152,194);
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href ="style.css" rel="stylesheet">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="tip-calculator">
+        <h2 class="header">TIP CALCULATOR</h2>
+        <div class="total-container">
+            <div class="inner-container">
+                <label for="bill">Bill: </label>
+                <input type="text" name="bill" id="bill" placeholder="100.00">
+            </div>
+            <div class="inner-container">
+                <label>Tip:</label>
+                <div data-tip></div>
+            </div>
+            <hr>
+            <div class="inner-container">
+                <label>Tip total:</label>
+                <div data-tip-total></div>
+            </div>
+            <div class="inner-container">
+                <label>Total:</label>
+                <div data-total></div>
+            </div>
+        </div>
+        <div class="slider-container">
+            <div class="inner-container">
+                <label>Tip amount:</label>
+                <input type="range" min="1" max="100" value="20" class="slider" id="tipAmount">
+            </div>
+            <div class="inner-container">
+                <label>Split between:</label>
+                <input type="range" min="1" max="10" value="1" class="slider" id="personAmount">
+            </div>
+        </div>
+        <div class="split-container">
+            <div class="inner-container">
+                <label>Persons:</label>
+                <div data-persons></div>
+            </div>
+            <div class="inner-container">
+                <label>Total per person:</label>
+                <div data-total-split></div>
+            </div>
+            <div class="inner-container">
+                </label>Tips per person:</label>
+                <div data-tip-split></div>
+            </div>
+        </div>
+        <div class="calculate-button"><button>CALCULATE</button></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
